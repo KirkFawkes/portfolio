@@ -149,36 +149,6 @@
     </item>
     
     <item>
-      <title>AutoFX2</title>
-      <link>https://kirkfawkes.github.io/portfolio/post/6</link>
-      <pubDate>Wed, 14 Oct 2015 23:25:14 +0300</pubDate>
-      
-      <guid>https://kirkfawkes.github.io/portfolio/post/6</guid>
-      <description>&lt;p&gt;С помощью &lt;strong&gt;AutoFX2&lt;/strong&gt; можно легко отправить заявку для получения кредита на покупку машины. Достаточно всего лишь ответить на несколько вопросов, сделать несколько фотографий и, когда заявка будет одобрена, машина ваша.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;I developed the application according to the provided design. Вместе с back-end разработчиком был разработан API, позволяющий в фоне загружать результаты после каждого шага - это уменьшает время ожидания пользователя и, соответственно, улучшает user experience&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Language:&lt;/strong&gt; Objective-C&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS 4.x+&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Application Translations:&lt;/strong&gt; English&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; Completed and sent to the customer&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jverkoey/nimbus&#34;&gt;NimbusKit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/AFNetworking/AFNetworking&#34;&gt;AFNetworking&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jverkoey/nimbus&#34;&gt;NimbusKit&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>MortgageCalc</title>
       <link>https://kirkfawkes.github.io/portfolio/post/5</link>
       <pubDate>Wed, 14 Oct 2015 19:04:45 +0300</pubDate>
