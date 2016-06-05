@@ -1,5 +1,0 @@
-iUser-agent: *
-Allow: /about
-Allow: /portfolio/about/
-Disallow: /
-
