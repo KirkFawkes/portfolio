@@ -7,125 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Oct 2015 23:29:48 +0300</lastBuildDate>
-    <atom:link href="https://kirkfawkes.github.io/portfolio/tags/ipad/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://kirkfawkes.github.io/portfolio/tags/ipad/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>FitnesTainer</title>
-      <link>https://kirkfawkes.github.io/portfolio/post/7</link>
+      <link>https://kirkfawkes.github.io/portfolio/post/7/</link>
       <pubDate>Wed, 14 Oct 2015 23:29:48 +0300</pubDate>
       
-      <guid>https://kirkfawkes.github.io/portfolio/post/7</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Fitness Trainer&lt;/strong&gt; is a exercise app designed to be the only tool you need other than yourself in the gym or at home. The first class Fitness Trainer app brings you everything you need to know about working out with tons of other features that make it far superior than any other fitness app.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Joined to development when an application has already been in app store. What was done:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Integrated MagicalRecord library for easy work with Core Data&lt;/li&gt;
-&lt;li&gt;Fixed lot of bugs
-
-&lt;ul&gt;
-&lt;li&gt;Import data from old SQLite database&lt;/li&gt;
-&lt;li&gt;Database synchronization via iCloud&lt;/li&gt;
-&lt;li&gt;Loading resources from amazon s3&lt;/li&gt;
-&lt;li&gt;… etc&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Developed an algorithm for advanced synchronization with different devices&lt;/li&gt;
-&lt;li&gt;Added charts&lt;/li&gt;
-&lt;li&gt;Fully redisigned UI. Twice.&lt;/li&gt;
-&lt;li&gt;… etc&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Language:&lt;/strong&gt; Objective-C&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS 4.x+&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Application Translations:&lt;/strong&gt; English&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; Released in &lt;a href=&#34;https://itunes.apple.com/us/app/fitness-trainer-exercise-workout/id484069067?mt=8&#34;&gt;AppStore&lt;/a&gt; (&lt;a href=&#34;https://itunes.apple.com/us/app/fitness-trainer-hd-exercise/id484071005?mt=8&#34;&gt;HD Version&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/magicalpanda/MagicalRecord&#34;&gt;MagicalRecord&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/core-plot/core-plot&#34;&gt;Core-Plot&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://kirkfawkes.github.io/portfolio/post/7/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Fitness Trainer&lt;/strong&gt; is a exercise app designed to be the only tool you need other than yourself in the gym or at home. The first class Fitness Trainer app brings you everything you need to know about working out with tons of other features that make it far superior than any other fitness app.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MortgageCalc</title>
-      <link>https://kirkfawkes.github.io/portfolio/post/5</link>
+      <link>https://kirkfawkes.github.io/portfolio/post/5/</link>
       <pubDate>Wed, 14 Oct 2015 19:04:45 +0300</pubDate>
       
-      <guid>https://kirkfawkes.github.io/portfolio/post/5</guid>
-      <description>&lt;p&gt;With &lt;strong&gt;MortgageCalc&lt;/strong&gt; you can easily calculate monthly payments on mortgage rates and other loans.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;When developing an application main requirement was cross-platform and use of PhoneGap. Application core created using Sencha Touch framework.
-Sending sms and email was implemented on native code for each of platform.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Languages:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;JavaScript &lt;em&gt;(Core)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Objective-C &lt;em&gt;(iPhone)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Java &lt;em&gt;(Android, Blackberry)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS 4.x+, Android 2.1+, Blackberry&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Application Translations:&lt;/strong&gt; English&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; Completed and sent to the customer&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://phonegap.com&#34;&gt;PhoneGap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.sencha.com/products/touch&#34;&gt;Sencha Touch&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://kirkfawkes.github.io/portfolio/post/5/</guid>
+      <description>&lt;p&gt;With &lt;strong&gt;MortgageCalc&lt;/strong&gt; you can easily calculate monthly payments on mortgage rates and other loans.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ZombieWrack</title>
-      <link>https://kirkfawkes.github.io/portfolio/post/2</link>
+      <link>https://kirkfawkes.github.io/portfolio/post/2/</link>
       <pubDate>Wed, 14 Oct 2015 18:15:14 +0300</pubDate>
       
-      <guid>https://kirkfawkes.github.io/portfolio/post/2</guid>
-      <description>&lt;p&gt;Disable all traps, throwing zombies into them.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Develop project alone.&lt;/p&gt;
-
-&lt;p&gt;First version was developed using custom 2d engine and Box2d. After some time, the game was completely rewritten in Objective-C and Cocos2d game engine. Also were used SpriteHelper for packing textures and LevelHelper for level editing.&lt;/p&gt;
-
-&lt;p&gt;After several months of development, project has been canceled.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Language:&lt;/strong&gt; Objective-C&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS 4+&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; Canceled&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Used Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cocos2d/cocos2d-objc&#34;&gt;Cocos2d&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/erincatto/Box2D&#34;&gt;Box2D&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third party apps:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://itunes.apple.com/us/app/spritehelper/id416068717?mt=12&#34;&gt;SpriteHeler&lt;/a&gt; - packing textures&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://itunes.apple.com/us/app/levelhelper/id421740820?mt=12&#34;&gt;LevelHelper&lt;/a&gt; - for WYSIWYG levele editing&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://kirkfawkes.github.io/portfolio/post/2/</guid>
+      <description>&lt;p&gt;Disable all traps, throwing zombies into them.&lt;/p&gt;</description>
     </item>
     
   </channel>

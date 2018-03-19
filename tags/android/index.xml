@@ -7,42 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Oct 2015 19:04:45 +0300</lastBuildDate>
-    <atom:link href="https://kirkfawkes.github.io/portfolio/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://kirkfawkes.github.io/portfolio/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>MortgageCalc</title>
-      <link>https://kirkfawkes.github.io/portfolio/post/5</link>
+      <link>https://kirkfawkes.github.io/portfolio/post/5/</link>
       <pubDate>Wed, 14 Oct 2015 19:04:45 +0300</pubDate>
       
-      <guid>https://kirkfawkes.github.io/portfolio/post/5</guid>
-      <description>&lt;p&gt;With &lt;strong&gt;MortgageCalc&lt;/strong&gt; you can easily calculate monthly payments on mortgage rates and other loans.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;When developing an application main requirement was cross-platform and use of PhoneGap. Application core created using Sencha Touch framework.
-Sending sms and email was implemented on native code for each of platform.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Languages:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;JavaScript &lt;em&gt;(Core)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Objective-C &lt;em&gt;(iPhone)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Java &lt;em&gt;(Android, Blackberry)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS 4.x+, Android 2.1+, Blackberry&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Application Translations:&lt;/strong&gt; English&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; Completed and sent to the customer&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://phonegap.com&#34;&gt;PhoneGap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.sencha.com/products/touch&#34;&gt;Sencha Touch&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://kirkfawkes.github.io/portfolio/post/5/</guid>
+      <description>&lt;p&gt;With &lt;strong&gt;MortgageCalc&lt;/strong&gt; you can easily calculate monthly payments on mortgage rates and other loans.&lt;/p&gt;</description>
     </item>
     
   </channel>

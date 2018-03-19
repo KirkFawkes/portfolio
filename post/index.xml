@@ -7,222 +7,56 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Oct 2015 23:52:43 +0300</lastBuildDate>
-    <atom:link href="https://kirkfawkes.github.io/portfolio/post/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://kirkfawkes.github.io/portfolio/post/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Mirrow.me</title>
-      <link>https://kirkfawkes.github.io/portfolio/post/8</link>
+      <link>https://kirkfawkes.github.io/portfolio/post/8/</link>
       <pubDate>Wed, 14 Oct 2015 23:52:43 +0300</pubDate>
       
-      <guid>https://kirkfawkes.github.io/portfolio/post/8</guid>
+      <guid>https://kirkfawkes.github.io/portfolio/post/8/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Mirrow.me&lt;/strong&gt; is a newly released app built for fashionista’s of all sorts. This app is straightforward to use allowing you to store, and show off your wardrobe to the community within the app. By uploading your clothing styles the app will start to suggest similar style of clothing that may suit you.&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;p&gt;Joined to development from the beginning of project. On the iOS app I mainly responsible for the network part, work with data, and their synchronization. Also I developed an &lt;em&gt;API&lt;/em&gt; for application, &lt;em&gt;back-end&lt;/em&gt; and &lt;em&gt;admin panel&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Mobile Client&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Language:&lt;/strong&gt; Objective-C&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS 7.0+&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Application Translations:&lt;/strong&gt; English, German, Italian, Russian, Dutch&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; Released in &lt;a href=&#34;https://itunes.apple.com/us/app/mirrow.me/id860000213?mt=8&#34;&gt;AppStore&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/magicalpanda/MagicalRecord&#34;&gt;MagicalRecord&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/AFNetworking/AFNetworking&#34;&gt;AFNetworking&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jverkoey/nimbus&#34;&gt;NimbusKit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jaydee3/JDStatusBarNotification&#34;&gt;JDStatusBar&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/alikaragoz/AKTabBarController&#34;&gt;AKTabBarController&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/rs/SDWebImage&#34;&gt;SDWebImage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/seanooi/iOS-WebP&#34;&gt;WebP codec&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.flurry.com&#34;&gt;Flurry&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Apps:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cocoapods.org&#34;&gt;CocoaPods&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/rentzsch/mogenerator&#34;&gt;mogenerator&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Backend&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Language:&lt;/strong&gt; Javascript&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; node.js v0.11&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://expressjs.com/&#34;&gt;express.js&lt;/a&gt; as base web framework&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/mongoose&#34;&gt;mongoose&lt;/a&gt; and &lt;a href=&#34;https://www.npmjs.com/package/redis&#34;&gt;redis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/winston&#34;&gt;winston&lt;/a&gt; for logging&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/mocha&#34;&gt;mocha&lt;/a&gt; for testing&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/node-inspector&#34;&gt;node-inspector&lt;/a&gt; for debugging&lt;/li&gt;
-&lt;li&gt;modified &lt;a href=&#34;https://www.npmjs.com/package/naught&#34;&gt;naught&lt;/a&gt; library for zero downtime deployment (added ability to dynamically change the number of workers, depending on load)&lt;/li&gt;
-&lt;li&gt;…etc&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Apps:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.mongodb.org&#34;&gt;MongoDB&lt;/a&gt; as database&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://redis.io&#34;&gt;Redis&lt;/a&gt; for data caching and storing all feed&amp;rsquo;s&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://mmonit.com/monit&#34;&gt;Monit&lt;/a&gt; for automatically restart app&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Admin Panel&lt;/strong&gt; web interface created with AngularJS and free &lt;a href=&#34;http://startbootstrap.com/template-overviews/sb-admin-2&#34;&gt;SB Admin 2&lt;/a&gt; theme. Back-end basically used as proxy to API server.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Language:&lt;/strong&gt; Javascript, HTML&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; node.js v0.11&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Application Translation:&lt;/strong&gt; English&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://expressjs.com&#34;&gt;express.js&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://lodash.com&#34;&gt;lodash&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://angularjs.org&#34;&gt;AngularJS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com&#34;&gt;Twitter Bootstrap&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Apps:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://gruntjs.com&#34;&gt;Grunt&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://bower.io&#34;&gt;Bower&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>FitnesTainer</title>
-      <link>https://kirkfawkes.github.io/portfolio/post/7</link>
+      <link>https://kirkfawkes.github.io/portfolio/post/7/</link>
       <pubDate>Wed, 14 Oct 2015 23:29:48 +0300</pubDate>
       
-      <guid>https://kirkfawkes.github.io/portfolio/post/7</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Fitness Trainer&lt;/strong&gt; is a exercise app designed to be the only tool you need other than yourself in the gym or at home. The first class Fitness Trainer app brings you everything you need to know about working out with tons of other features that make it far superior than any other fitness app.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Joined to development when an application has already been in app store. What was done:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Integrated MagicalRecord library for easy work with Core Data&lt;/li&gt;
-&lt;li&gt;Fixed lot of bugs
-
-&lt;ul&gt;
-&lt;li&gt;Import data from old SQLite database&lt;/li&gt;
-&lt;li&gt;Database synchronization via iCloud&lt;/li&gt;
-&lt;li&gt;Loading resources from amazon s3&lt;/li&gt;
-&lt;li&gt;… etc&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Developed an algorithm for advanced synchronization with different devices&lt;/li&gt;
-&lt;li&gt;Added charts&lt;/li&gt;
-&lt;li&gt;Fully redisigned UI. Twice.&lt;/li&gt;
-&lt;li&gt;… etc&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Language:&lt;/strong&gt; Objective-C&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS 4.x+&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Application Translations:&lt;/strong&gt; English&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; Released in &lt;a href=&#34;https://itunes.apple.com/us/app/fitness-trainer-exercise-workout/id484069067?mt=8&#34;&gt;AppStore&lt;/a&gt; (&lt;a href=&#34;https://itunes.apple.com/us/app/fitness-trainer-hd-exercise/id484071005?mt=8&#34;&gt;HD Version&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/magicalpanda/MagicalRecord&#34;&gt;MagicalRecord&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/core-plot/core-plot&#34;&gt;Core-Plot&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://kirkfawkes.github.io/portfolio/post/7/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Fitness Trainer&lt;/strong&gt; is a exercise app designed to be the only tool you need other than yourself in the gym or at home. The first class Fitness Trainer app brings you everything you need to know about working out with tons of other features that make it far superior than any other fitness app.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MortgageCalc</title>
-      <link>https://kirkfawkes.github.io/portfolio/post/5</link>
+      <link>https://kirkfawkes.github.io/portfolio/post/5/</link>
       <pubDate>Wed, 14 Oct 2015 19:04:45 +0300</pubDate>
       
-      <guid>https://kirkfawkes.github.io/portfolio/post/5</guid>
-      <description>&lt;p&gt;With &lt;strong&gt;MortgageCalc&lt;/strong&gt; you can easily calculate monthly payments on mortgage rates and other loans.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;When developing an application main requirement was cross-platform and use of PhoneGap. Application core created using Sencha Touch framework.
-Sending sms and email was implemented on native code for each of platform.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Languages:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;JavaScript &lt;em&gt;(Core)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Objective-C &lt;em&gt;(iPhone)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Java &lt;em&gt;(Android, Blackberry)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS 4.x+, Android 2.1+, Blackberry&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Application Translations:&lt;/strong&gt; English&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; Completed and sent to the customer&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://phonegap.com&#34;&gt;PhoneGap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.sencha.com/products/touch&#34;&gt;Sencha Touch&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://kirkfawkes.github.io/portfolio/post/5/</guid>
+      <description>&lt;p&gt;With &lt;strong&gt;MortgageCalc&lt;/strong&gt; you can easily calculate monthly payments on mortgage rates and other loans.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>AbTrainerX</title>
-      <link>https://kirkfawkes.github.io/portfolio/post/4</link>
+      <link>https://kirkfawkes.github.io/portfolio/post/4/</link>
       <pubDate>Wed, 14 Oct 2015 18:57:13 +0300</pubDate>
       
-      <guid>https://kirkfawkes.github.io/portfolio/post/4</guid>
+      <guid>https://kirkfawkes.github.io/portfolio/post/4/</guid>
       <description>&lt;p&gt;Have your very own personal trainer at your fingertips.&lt;/p&gt;
 
-&lt;p&gt;Use the &lt;strong&gt;AbTrainerX&lt;/strong&gt; app on your iphone every other day for 30 days. It is about a 10 min ab work out&amp;hellip;so not a big time commitment!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Develop an application according to the assigned task and design&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Language:&lt;/strong&gt; Objective-C&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS 5.x+&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Application Translations:&lt;/strong&gt; English&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; Released &lt;a href=&#34;https://itunes.apple.com/us/app/ab-trainer-x/id527563749?mt=8&#34;&gt;AppStore&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/MugunthKumar/MKStoreKit&#34;&gt;MKStoreKit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.mopub.com/&#34;&gt;MoPub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://allseeing-i.com/ASIHTTPRequest&#34;&gt;ASIHTTPRequest&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jdg/MBProgressHUD&#34;&gt;MBProgressHUD&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;p&gt;Use the &lt;strong&gt;AbTrainerX&lt;/strong&gt; app on your iphone every other day for 30 days. It is about a 10 min ab work out&amp;hellip;so not a big time commitment!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ForeclosureCanada</title>
-      <link>https://kirkfawkes.github.io/portfolio/post/3</link>
+      <link>https://kirkfawkes.github.io/portfolio/post/3/</link>
       <pubDate>Wed, 14 Oct 2015 18:42:59 +0300</pubDate>
       
-      <guid>https://kirkfawkes.github.io/portfolio/post/3</guid>
+      <guid>https://kirkfawkes.github.io/portfolio/post/3/</guid>
       <description>&lt;p&gt;Bank foreclosures are properties that have defaulted on their mortgage payments and are re-possessed by the bank. In order to recover their loan as soon as possible, banks sell foreclosures often at massive discounts.&lt;/p&gt;
 
 &lt;p&gt;These incredible deals go fast, so investors or homebuyers with the most updated information have the buying advantage.&lt;/p&gt;
@@ -233,104 +67,29 @@ Sending sms and email was implemented on native code for each of platform.&lt;/p
 
 &lt;p&gt;Also find single-family homes, condos, townhomes, apartments, commercial properties, raw land and more!&lt;/p&gt;
 
-&lt;p&gt;Also find estate sales, probate sales, tax sales, motivated sellers, and many other types of properties that sell for below market value!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Develop project alone.&lt;/p&gt;
-
-&lt;p&gt;I had to develop an application for &lt;a href=&#34;http://www.foreclosuresearch.ca&#34;&gt;Foreclosure Search&lt;/a&gt; site.&lt;/p&gt;
-
-&lt;p&gt;Since target site doesn&amp;rsquo;t has API, my first task was analyze site code, MySQL database structure and develop API for getting list of real estate.&lt;/p&gt;
-
-&lt;p&gt;Also client has not provided a design for the application, so I took, as a basis, website design and similar client application written on some online builder tool.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Language:&lt;/strong&gt; Objective-C&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS 4.x+&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Application Translations:&lt;/strong&gt; English&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; Released in &lt;a href=&#34;https://itunes.apple.com/us/app/foreclosure-canada-real-estate/id548227953?mt=8&#34;&gt;AppStore&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/MugunthKumar/MKStoreKit&#34;&gt;MKStoreKit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.appoxee.com/&#34;&gt;Apoxee&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/TransitApp/SVGeocoder&#34;&gt;SVGeocoder&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jdg/MBProgressHUD&#34;&gt;MBProgressHUD&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;p&gt;Also find estate sales, probate sales, tax sales, motivated sellers, and many other types of properties that sell for below market value!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ZombieWrack</title>
-      <link>https://kirkfawkes.github.io/portfolio/post/2</link>
+      <link>https://kirkfawkes.github.io/portfolio/post/2/</link>
       <pubDate>Wed, 14 Oct 2015 18:15:14 +0300</pubDate>
       
-      <guid>https://kirkfawkes.github.io/portfolio/post/2</guid>
-      <description>&lt;p&gt;Disable all traps, throwing zombies into them.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Develop project alone.&lt;/p&gt;
-
-&lt;p&gt;First version was developed using custom 2d engine and Box2d. After some time, the game was completely rewritten in Objective-C and Cocos2d game engine. Also were used SpriteHelper for packing textures and LevelHelper for level editing.&lt;/p&gt;
-
-&lt;p&gt;After several months of development, project has been canceled.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Language:&lt;/strong&gt; Objective-C&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS 4+&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; Canceled&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Used Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cocos2d/cocos2d-objc&#34;&gt;Cocos2d&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/erincatto/Box2D&#34;&gt;Box2D&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third party apps:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://itunes.apple.com/us/app/spritehelper/id416068717?mt=12&#34;&gt;SpriteHeler&lt;/a&gt; - packing textures&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://itunes.apple.com/us/app/levelhelper/id421740820?mt=12&#34;&gt;LevelHelper&lt;/a&gt; - for WYSIWYG levele editing&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://kirkfawkes.github.io/portfolio/post/2/</guid>
+      <description>&lt;p&gt;Disable all traps, throwing zombies into them.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Aztec Run</title>
-      <link>https://kirkfawkes.github.io/portfolio/post/1</link>
+      <link>https://kirkfawkes.github.io/portfolio/post/1/</link>
       <pubDate>Wed, 14 Oct 2015 16:44:36 +0300</pubDate>
       
-      <guid>https://kirkfawkes.github.io/portfolio/post/1</guid>
+      <guid>https://kirkfawkes.github.io/portfolio/post/1/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Aztec Run&lt;/strong&gt; is a simple and fun falling game.
 Enjoy playing the old-fashioned but still addictive gameplay.
 Imagine yourself a golden ball jumping from one platform to another trying not to crash.&lt;/p&gt;
 
-&lt;p&gt;The game has two control options. Use arrows or tilt to surf through platforms, trying not to hit the spikes.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Language:&lt;/strong&gt; Objective-C/C++&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS 3.1+&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Application Translations:&lt;/strong&gt; English&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; Released in &lt;a href=&#34;https://itunes.apple.com/us/app/aztec/id511589560?mt=8&#34;&gt;AppStore&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-Party Libraries:&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cocos2d/cocos2d-objc&#34;&gt;Cocos2d-objc&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/erincatto/Box2D&#34;&gt;Box2D&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twotoasters/fbconnect-iphone&#34;&gt;FBConnect&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mattgemmell/MGTwitterEngine&#34;&gt;MGTwitterEngine&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;p&gt;The game has two control options. Use arrows or tilt to surf through platforms, trying not to hit the spikes.&lt;/p&gt;</description>
     </item>
     
   </channel>
