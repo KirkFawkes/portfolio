@@ -1,0 +1,342 @@
+<html>
+	<head>
+		<title>Zombies simulator</title>
+		<script>
+			/********************** Gelper functions **********************/
+			function rand(min, max) {
+				return  Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+
+			function squredDistance(vec1, ver2) {
+				var x = vec1.x - ver2.x;
+				var y = vec1.y - ver2.y;
+				return x * x + y * y;
+			}
+
+			function distance(vec1, ver2) {
+				return Math.sqrt(squredDistance(vec1, ver2));
+			}
+
+			function normalizedVector(vec) {
+				return vec.copy().normalize();
+			}
+
+			function directionVector(vec1, vec2) {
+				return vec1.copy().subVector(vec2).normalize();
+			}
+
+			/************************ Vector class ************************/
+			function Vector(x, y) {
+				this.x = x;
+				this.y = y;
+			}
+
+			Vector.prototype.copy = function() {
+				return new Vector(this.x, this.y);
+			}
+
+			Vector.prototype.addVector = function(vec) {
+				this.x += vec.x;
+				this.y += vec.y;
+				return this;
+			}
+
+			Vector.prototype.addNum = function(num) {
+				this.x += num;
+				this.y += num;
+				return this;
+			}
+			
+			Vector.prototype.subVector = function(vec) {
+				this.x -= vec.x;
+				this.y -= vec.y;
+				return this;
+			}
+
+			Vector.prototype.subNum = function(num) {
+				this.x -= num;
+				this.y -= num;
+				return this;
+			}
+
+			Vector.prototype.mulNum = function(num) {
+				this.x *= num;
+				this.y *= num;
+				return this;
+			}
+
+			Vector.prototype.lengthSqured = function() {
+				return this.x * this.x + this.y * this.y;
+			}
+
+			Vector.prototype.length = function() {
+				return Math.sqrt(this.lengthSqured());
+			}
+
+			Vector.prototype.normalize = function() {
+				var len = this.length();
+				len = (len == 0 ? 1 : len);
+				this.x /= len;
+				this.y /= len;
+				return this;
+			}
+
+			/**********************  Simulator class **********************/
+			function Simulator(canvasId) {
+				var self = this;
+
+				this.items = [];
+				this.fps = 0;
+
+				this.canvas = document.getElementById(canvasId);
+				this.canvas.oncontextmenu = function() { return false; } 
+				this.canvas.addEventListener("mousedown", function(event) {
+					var x = (event.clientX!=undefined ? event.clientX : event.x) - self.canvas.offsetLeft;
+					var y = (event.clientY!=undefined ? event.clientY : event.y) - self.canvas.offsetTop;
+					var isZombie = (event.button==2);
+
+					var type = (isZombie? 2 : 1); //event.button: 0 - left; 1 - middle; 2 - right
+					var pos = new Vector(x, y);
+					var radius = 6;
+					var speed =  rand(1, isZombie ? 1.25 : 2.25);
+
+					self.createObject(type, pos, radius, speed);
+				}, false);
+
+				this.clear();
+			}
+
+			Simulator.prototype.createObject = function(type, position, radius, speed) {
+				var color = 'white';
+
+				switch(type) {
+					case 1: color = 'green'; break;	//human
+					case 2: color = 'red'; break;	//zombie
+				}
+
+				var obj = {t:type, p:position, r:radius, s:speed, c:color};
+				if (type == 1)
+					obj.eye = rand(50, 100);
+
+				this.items.push(obj);
+				this.draw();
+
+				console.log("Making object at point (" + position.x + "," + position.y + ")");
+			}
+
+			Simulator.prototype.draw = function() {
+				var w = this.canvas.width;
+				var h = this.canvas.height;
+				var ctx = this.canvas.getContext("2d");
+
+				//clear background
+				ctx.fillStyle = "#F0F0F0";
+				ctx.fillRect(0, 0, w, h);
+
+				for (var i=0, n=this.items.length; i<n; i++) {
+					var obj = this.items[i];
+
+					var pos = obj.p;
+					var radius = obj.r;
+					var color = obj.c;
+
+					ctx.beginPath();
+					ctx.arc(pos.x, pos.y, radius, 0, 2*Math.PI, false);
+					ctx.fillStyle = color;
+					ctx.fill();
+					ctx.lineWidth = 1;
+	    			ctx.strokeStyle = '#003300';
+					ctx.stroke();
+
+					if (obj.t == 1) {
+						ctx.beginPath();
+						ctx.arc(pos.x, pos.y, obj.eye, 0, 2*Math.PI, false);
+						ctx.lineWidth = 1;
+		    			ctx.strokeStyle = '#0033FF';
+						ctx.stroke();						
+					}
+				}
+
+				ctx.fillStyle = "blue";
+  				ctx.font = "bold 9px Arial";
+  				ctx.fillText("FPS: " + this.fps, 7, 15);
+  				ctx.fillText("Objects: " + this.items.length, 7, 27);
+			}	
+
+			Simulator.prototype.update = function(dt) {
+				var self = this;
+				var items = this.items;
+
+				var itemsVithType = function(array, type) {
+					var items = [];
+					for (var i=0, n=array.length; i<n; i++) {
+						if (array[i].t == type)
+							items.push(array[i]);
+					}
+					return items;
+				}
+
+				var fixCollisions = function(object) {
+					var w = self.canvas.width;
+					var h = self.canvas.height;
+					var r = object.r;
+
+					if (object.p.x < r) object.p.x = r;
+					if (object.p.y < r) object.p.y = r;
+					if (object.p.x > w-r) object.p.x = w-r;
+					if (object.p.y > h-r) object.p.y = h-r;
+					// if (object.p.x < r) object.p.x = r;
+					// if (object.p.y < r) object.p.y = r;
+					// if (object.p.x > w) object.p.x = 0;
+					// if (object.p.y > h) object.p.y = 0;
+				}
+
+				var zombiesLogic = function(zombie, humans) {
+					if (humans==undefined || humans.length==0)
+						return;
+
+					var nearObj = humans[0];
+					var nearObjDist = squredDistance(zombie.p, nearObj.p);
+
+					//search neares human
+					for (var i=1, n=humans.length; i<n; i++) {
+						var human = humans[i];
+
+						var len = squredDistance(zombie.p, human.p);
+						if (len < nearObjDist) {
+							nearObj = human;
+							nearObjDist = len;
+						}
+					}
+
+					//goto nearest human
+					var vel = directionVector(zombie.p, nearObj.p);
+					vel.mulNum(zombie.s * dt);
+					zombie.p.subVector(vel);
+					fixCollisions(zombie);
+				}
+
+				var humansLogic = function(human, zombies) {
+					if (zombies==undefined || zombies.length==0)
+						return;
+
+					var vel = new Vector(0, 0);
+					for (var i=0, n=zombies.length; i<n; i++) {
+						var z = zombies[i];
+
+						var distance = squredDistance(human.p, z.p);
+						if (distance - z.r*z.r <= human.eye * human.eye) {
+							var direction = directionVector(human.p, z.p);
+							vel.addVector(direction);
+						}
+					}
+
+					vel.normalize().mulNum(human.s * dt)
+					human.p.addVector(vel);
+					fixCollisions(human);
+				}
+
+				var zombies = itemsVithType(this.items, 2);
+				var humans = itemsVithType(this.items, 1);
+
+				for (var i=0, n=items.length; i<n; i++) {
+					var obj = items[i];
+
+					switch(obj.t) {
+						case 1: humansLogic(obj, zombies); break;	//human
+						case 2: zombiesLogic(obj, humans); break;	//zombie
+					}
+				}
+
+				for (var i=0, n=zombies.length; i<n; i++) {
+					var zombie = zombies[i];
+					for (var j=0, m=humans.length; j<m; j++) {
+						var human = humans[j];
+						var dist = distance(zombie.p, human.p);
+						if (dist <= zombie.r + human.r + 1) {
+							human.t = 2;
+							human.c = 'red';
+						}
+					}
+				}
+			}
+
+			Simulator.prototype.start = function()
+			{
+				if (this.timerId == undefined) {
+					this.fps = 0;
+					this.timestamp = Date.now()-1;
+				}
+
+				var currTimeStamp = Date.now();
+				var dt = currTimeStamp - this.timestamp;
+				this.timestamp = currTimeStamp;
+
+				var fps = 1000.0/(dt==0 ? 1 : dt);
+				this.fps = Math.floor((this.fps + fps)/2);
+
+
+				this.update(dt/30);
+				this.draw();
+
+				var self = this;
+				this.timerId = setTimeout(function() { self.start(); }, 0);
+			}
+
+			Simulator.prototype.stop = function() {
+				clearTimeout(this.timerId);
+				this.timerId = undefined;
+			}
+
+			Simulator.prototype.clear = function() {
+				this.items = [];
+				this.fps = 0;
+				this.draw();
+			}
+			/********************** Other stuff **********************/
+
+			document.onload = function()
+			{
+				document.simulator = new Simulator("canvas");
+				document.simulator.draw();
+			}
+
+			function start()
+			{
+				document.getElementById("start").disabled = true;
+				document.getElementById("stop").disabled = false;
+
+				document.simulator.start();
+			}
+
+			function stop()
+			{
+				document.getElementById("start").disabled = false;
+				document.getElementById("stop").disabled = true;
+				
+				document.simulator.stop();
+			}
+
+			function reset()
+			{
+				stop();
+				document.simulator.clear();
+			}
+		</script>
+		<style>
+			#canvas {
+				border: 1px solid #000000;
+			}
+		</style>
+	</head>
+	<body onload="document.onload();">
+		<div>
+			<input type="button" id="start" value="Start" onclick="start();" />
+			<input type="button" id="stop" value="Stop" onclick="stop();" disabled=true/>
+			<input type="button" id="clear" value="Clear" onclick="reset();" />
+		</div>
+		<canvas id="canvas" width="500" height="300">
+			<p>Ваш браузер не поддерживает рисование.</p>
+		</canvas>
+	</body>
+</html>
